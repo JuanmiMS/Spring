@@ -68,7 +68,6 @@ public class ControllerTests {
     	
         this.mockMvc.perform(get("/personal/consulta?id=1")).andExpect(status().isOk())
         .andExpect(content().string(containsString("Antonia")));
-    	
     }
 
     /**
